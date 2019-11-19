@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Direction Service</title>
+  </head>
+  <body>
+    <h1>Google maps - direction service and distance</h1>
+
+    <div id="map"></div>
+    <div id="right-panel">
+    <div>
+    <b>Start:</b>
+    <select id="start">
+      <option value="Auckland">Auckland</option>
+      <option value="Wellington">Wellington</option>
+      <option value="Christchurch">Christchurch</option>
+      <option value="Queenstown">Queenstown</option>
+    </select>
+    <br>
+    <b>Waypoints:</b> <br>
+    <i>(Ctrl+Click or Cmd+Click for multiple selection)</i> <br>
+    <select multiple id="waypoints">
+      <option value="hamilton">Hamilton</option>
+      <option value="rotorua">Rotorua</option>
+      <option value="napier">Napier</option>
+      <option value="picton">Picton</option>
+      <option value="akaroa">Akaroa</option>
+      <option value="timaru">Timaru</option>
+      <option value="wanaka">Wanaka</option>
+    </select>
+    <br>
+    <b>End:</b>
+    <select id="end">
+      <option value="Auckland">Auckland</option>
+      <option value="Wellington">Wellington</option>
+      <option value="Christchurch">Christchurch</option>
+      <option value="Queesntown">Queenstown</option>
+    </select>
+    <br>
+      <input type="submit" id="submit">
+    </div>
+    <div id="directions-panel"></div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+    <!-- apikey -->
+    <script src="js/config.json"></script>
+
+    <!-- own script -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
